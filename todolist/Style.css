@@ -1,0 +1,191 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utilities */
+.container {
+    margin: 0 auto;
+    max-width: 540px;
+}
+
+/* Generiche  */
+body {
+    padding: 16px;
+    font-family: Inter, sans-serif;
+    background-color: var(--primary-color);
+}
+
+/*Colore tema principale*/
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+/*Colore tema secondario*/
+.dark-theme {
+    --primary-color: #00010673;
+    --secondary-color: white;
+}
+
+/*Icona cambio tema*/
+#iconaTema {
+    cursor: pointer;
+    border: 1px solid black;
+    max-width: 50px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+/*Titolo*/
+h1 {
+    color: black;
+    font-size: 20px;
+}
+
+/* Pannello */
+.panel {
+    padding: 16px;
+    border-radius: 16px;
+    outline: 1px solid black;
+    background-color: rgb(240, 240, 240);
+}
+
+/*Pannello secondario*/
+.panelbot {
+    margin: 30px;
+    text-align: center;
+    padding: 16px;
+    border-radius: 16px;
+    outline: 1px solid black;
+    background-color: rgb(240, 240, 240);
+}
+
+/* Elementi del modulo aggiungi attività */
+.add-todo {
+    display: flex;
+    gap: 8px;
+    margin-top: 50px;
+    background-color: white;
+
+}
+
+input {
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 8px;
+    border: none;
+    flex-grow: 1;
+}
+
+/*Bottone aggiungi attività*/
+button {
+    cursor: pointer;
+    padding: 3px;
+    border: none;
+    border-radius: 16px;
+}
+
+/*pulsante aggiugi*/
+.plus {
+    max-width: 15px;
+}
+
+/*attività aggiunte*/
+.todo-item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 16px 0;
+    padding: 16px;
+}
+
+/* Messaggio di lista vuota */
+.empty-list-message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--secondary-color);
+
+}
+
+/*Messaggio attività completate vuota*/
+.empty-list-message-completed {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+/*attività completate*/
+.completed-item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 16px 0;
+    text-decoration: line-through;
+
+}
+
+/*Atiività da fare*/
+.todo-text {
+    padding: 3px 16px 3px 16px;
+    flex-grow: 1;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+/*Pulsante modifica attività*/
+.todo-edit {
+    max-width: 16px;
+    margin: 4px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+/*Pulsante elimina attività*/
+.todo-delete {
+    max-width: 12px;
+    margin: 4px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+/*pulsante check*/
+.todo-check {
+    padding: 7px;
+    border-radius: 10;
+    outline: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+/*pulsante svuota attività*/
+.cestino {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Sezione pulsante svuota*/
+.svuota {
+    padding: 16px;
+    border-radius: 16px;
+    outline: 1px solid black;
+    background-color: var(--primary-color);
+    max-width: 50px;
+    cursor: pointer;
+    background-color: white;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titolo e Icona pagina-->
+    <title>Todolist | Coding Week</title>
+    <link rel="icon" href="images/Logo.png.png">
+
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Stile CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Intestazione -->
+        <header class="panel">
+            <h1>Todolist app</h1>
+            <img class="LogoHeader" src="images/moon.png" id="iconaTema">
+        </header>
+
+        <!-- Sezione principale -->
+        <main>
+            <!-- Messaggio da mostrare se non ho attività -->
+            <p class="empty-list-message"></p>
+
+            <!-- Lista attività -->
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <div class="todo-check">
+                        <img src="images/check.svg" alt="Check Icon">
+                    </div>
+                    <p class="todo-text"></p>
+
+                    <img class="todo-edit" src="images/edit.svg" alt="Edit Icon">
+
+                    <img class="todo-delete" src="images/cestino.png" alt="Cestino Icon">
+                </li>
+            </ul>
+
+            <!-- Pannello aggiunta attività -->
+            <div class="add-todo">
+                <input type="text" placeholder="Aggiungi attività">
+                <button>
+                    <img class="plus" title="Aggiungi" src="images/Plus.png" alt="plus icon">
+                </button>
+            </div>
+
+            <hr>
+            <!-- Pannello Lista attività completate-->
+            <div class="panelbot">
+                <h1>Attività Completate</h1>
+            </div>
+
+            <!-- Messaggio attività completate vuota-->
+            <p class="empty-list-message-completed"> Non ci sono attività completate</p>
+
+
+            <!--attività completate-->
+            <ul class="completed-list">
+                <li class="completed-item">
+                    <p class="completed-text"></p>
+                </li>
+
+            </ul>
+
+            <!--Pulsante svuota attività-->
+            <div class="cestino">
+                <img class="svuota" title="Elimina attività completate" src="images/cestino.png" alt="cestino">
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
